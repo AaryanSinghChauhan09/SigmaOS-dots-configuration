@@ -1,0 +1,4 @@
+[component]
+name = "SigmaOS-dots-configuration"
+tier = 3
+description = "Dotfiles manager, configuration symlinker, and profile switcher"
