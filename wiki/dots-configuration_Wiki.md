@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-dots-configuration Component Wiki
+# SigmaOS-dots-configuration Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-dots-configuration provides Dotfiles manager (omadots-style) for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-dots-configuration provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-dots-configuration Abstraction
-- Fail-Fast on SigmaOS-dots-configuration Initialization Errors
-- Deterministic SigmaOS-dots-configuration Setup
-- Clear Abstraction Over SigmaOS-dots-configuration APIs
-- Composition over Inheritance for SigmaOS-dots-configuration extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-dots-configuration Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-dots-configuration Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-dots-configuration Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-dots-configuration APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-dots-configuration extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-dots-configuration follows a SigmaOS-dots-configuration pattern:
+SigmaOS-dots-configuration follows a SigmaOS-dots-configuration pattern:
 - **SigmaOS-dots-configuration Core**: Provides SigmaOS-dots-configuration support, SigmaOS-dots-configuration management, and SigmaOS-dots-configuration tracking
 - **Management**: Supports SigmaOS-dots-configuration management, SigmaOS-dots-configuration configuration, and SigmaOS-dots-configuration lifecycle
 - **Tracking**: Supports SigmaOS-dots-configuration status, SigmaOS-dots-configuration tracking, and SigmaOS-dots-configuration lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-dots-configuration follows a SigmaOS-dots-configuration pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-dots-configuration by given configuration
--  - Register a SigmaOS-dots-configuration by given name
--  - Get SigmaOS-dots-configuration status and SigmaOS-dots-configuration availability
--  - Track SigmaOS-dots-configuration management and SigmaOS-dots-configuration tracking
+- Manage a SigmaOS-dots-configuration by given configuration
+- Register a SigmaOS-dots-configuration by given name
+- Get SigmaOS-dots-configuration status and SigmaOS-dots-configuration availability
+- Track SigmaOS-dots-configuration management and SigmaOS-dots-configuration tracking
 - Error types for SigmaOS-dots-configuration failure scenarios or unsupported SigmaOS-dots-configuration types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-dots-configuration init, SigmaOS-dots-configuration management)
 3. **Assert**: Verify the expected SigmaOS-dots-configuration results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-dots-configuration initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-dots-configuration failure scenarios
 - Unit tests provided for SigmaOS-dots-configuration management and configuration
